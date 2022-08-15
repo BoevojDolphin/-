@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  background: url("img.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.sign-in {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+input {
+  display: block;
+  font-size: 1em;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid burlywood;
+  color: burlywood;
+  padding-left: 10px;
+}
+
+button {
+  font-size: 2em;
+  border-radius: 10px;
+  background: burlywood;
+  color: beige;
+}
