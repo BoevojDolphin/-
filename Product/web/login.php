@@ -1,14 +1,9 @@
 <?php
- require "db.php";
-
-
+ require 'db.php';
 $data = $_POST;
-if( isset($data['do_login']))
-{
-    $errors = array();
-    $user =  R::findOne('users', 'login = ?', array($data['login']));
-  
-}
+?>
+<?php
+include 'gaga.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

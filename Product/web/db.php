@@ -1,11 +1,13 @@
 <?php
 
-require 'rb.php';
-R::setup( 'mysql:host=localhost;dbname=projectalex',
-'root', 'root' );
-//try{
- //   $db = new PDO('mysql:host=localhost;dbname=projectalex','root','root');
-//} catch(PDOException $e){
-    echo $e->getmessage();
-//}
-session_start();?>
+$host = 'localhost';
+$db = 'projectalex';
+$user = 'root';
+$pass = 'root';
+
+try {
+$pdo = new PDO( "mysql:host=$host; dbname=$db",
+$user, $pass );
+} catch (PDOException $e) {
+	echo 'Ошибка соединения' .$e->getMessage();
+}
